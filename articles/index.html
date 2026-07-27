@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feature Desk — Three Original Articles</title>
+<style>
+  :root { --rule:#dcdcdc; --ink:#121212; --muted:#666; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: var(--ink); background:#fff;
+    line-height:1.5; padding: 28px 20px 80px;
+  }
+  .wrap { max-width: 1100px; margin:0 auto; }
+  .masthead { text-align:center; border-bottom:1px solid var(--ink); padding-bottom:14px; }
+  .masthead h1 {
+    font-size: clamp(34px, 7vw, 64px); font-weight:900;
+    letter-spacing:-1px; font-family:'Chomsky', Georgia, serif;
+  }
+  .dateline {
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
+    font-family: Helvetica, Arial, sans-serif; font-size:11px;
+    letter-spacing:.08em; text-transform:uppercase; color:var(--muted);
+    padding:8px 0; border-bottom:3px double var(--ink); margin-bottom:34px;
+  }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(290px,1fr)); gap:0; }
+  article { padding: 0 26px; border-left:1px solid var(--rule); }
+  article:first-child { border-left:none; padding-left:0; }
+  article:last-child { padding-right:0; }
+  .kicker {
+    font-family:Helvetica,Arial,sans-serif; font-size:10.5px; font-weight:700;
+    letter-spacing:.1em; text-transform:uppercase; color:#a81817; margin-bottom:10px;
+  }
+  h2 { font-size:27px; line-height:1.15; letter-spacing:-.4px; margin-bottom:12px; }
+  h2 a { color:inherit; text-decoration:none; }
+  h2 a:hover { text-decoration:underline; }
+  .byline {
+    font-family:Helvetica,Arial,sans-serif; font-size:11px; text-transform:uppercase;
+    letter-spacing:.06em; color:var(--muted); margin-bottom:12px;
+  }
+  p.summary { font-size:16px; color:#333; margin-bottom:14px; }
+  .read {
+    font-family:Helvetica,Arial,sans-serif; font-size:11px; font-weight:700;
+    letter-spacing:.09em; text-transform:uppercase; color:#326891; text-decoration:none;
+  }
+  .read:hover { text-decoration:underline; }
+  footer {
+    margin-top:50px; padding-top:14px; border-top:1px solid var(--rule);
+    font-family:Helvetica,Arial,sans-serif; font-size:11.5px; color:var(--muted); text-align:center;
+  }
+  @media (max-width:900px){
+    article { border-left:none; padding:26px 0; border-top:1px solid var(--rule); }
+    article:first-child { border-top:none; padding-top:0; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="masthead"><h1>The Feature Desk</h1></div>
+  <div class="dateline">
+    <span>Monday, July 27, 2026</span>
+    <span>Three Original Long-Form Drafts</span>
+    <span>Business &middot; Culture &middot; Health</span>
+  </div>
+
+  <div class="grid">
+    <article>
+      <div class="kicker">Business · The New Workplace</div>
+      <h2><a href="micro-retirement.md">The Micro-Retirement: Why Workers Are Taking Their Golden Years in Installments</a></h2>
+      <div class="byline">By Dana Whitfield</div>
+      <p class="summary">A growing share of workers in their 30s, 40s and 50s are withdrawing leisure in small installments rather than saving it all for 67 — and quietly betting the labor market will take them back. The arithmetic is brutal. Many are doing it anyway.</p>
+      <a class="read" href="micro-retirement.md">Read the article →</a>
+    </article>
+
+    <article>
+      <div class="kicker">Culture · American Life</div>
+      <h2><a href="third-places.md">Where Did Everyone Go? The Quiet Collapse of the Place You Used to Hang Out</a></h2>
+      <div class="byline">By Owen Braddock</div>
+      <p class="summary">Bowling alleys, corner bars and church halls have been thinning for forty years. What replaced them charges a monthly fee. A look at what disappears when a town loses the buildings where people used to run into each other.</p>
+      <a class="read" href="third-places.md">Read the article →</a>
+    </article>
+
+    <article>
+      <div class="kicker">Health · Well</div>
+      <h2><a href="sleep-industrial-complex.md">You Are Not Sleeping Badly. You Are Being Told You Are.</a></h2>
+      <div class="byline">By Miriam Solberg</div>
+      <p class="summary">Rings, bands and scores have turned rest into a nightly performance review — and clinicians now have a name for what happens next. What the evidence actually supports, and when to stop optimizing and see a doctor.</p>
+      <a class="read" href="sleep-industrial-complex.md">Read the article →</a>
+    </article>
+  </div>
+
+  <footer>Original feature drafts written for this repository. Individuals, institutions and quotations are illustrative unless otherwise noted.</footer>
+</div>
+</body>
+</html>
